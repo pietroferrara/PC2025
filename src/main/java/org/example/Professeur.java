@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Professeur extends Personne implements Chercheur, ScientificCreator {
+public class Professeur extends Personne implements /*Chercheur,*/ ScientificCreator {
     public Professeur(String nom, String prenom, Date naissance) {
         super(nom, prenom, naissance);
     }
