@@ -11,6 +11,17 @@ public class Professeur extends Personne implements /*Chercheur,*/ ScientificCre
     }
 
     private List<Integer> papierscientific = new ArrayList();
+
+    @Override
+    public void publishPaper(int i) {
+        Chercheur.super.publishPaper(i);
+    }
+
+    @Override
+    public int getPapers() {
+        return Chercheur.super.getPapers();
+    }
+
     @Override
     public List<Integer> getPapierscientifique() {
         return papierscientific;
